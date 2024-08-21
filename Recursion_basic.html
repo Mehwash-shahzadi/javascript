@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Direct Recursion</title>
+  </head>
+  <body>
+    <script>
+      // function Apple(x) {
+      //   console.warn(x);
+      //   if (x < 10) {
+      //     Apple(x + 1);
+      //   }
+      // }
+      // let data = 0;
+      // Apple(data);
+      function factorial(item) {
+        if (item == 0) {
+          return 1;
+        }
+        return item * factorial(item - 1);
+      }
+      let data = 5;
+      console.log(factorial(data));
+      // function factorial(item) {
+      //   if (item == 0) {
+      //     return 1;
+      //   }
+      //   return item * factorial(item - 1);
+      // }
+      // let data = 5;
+      // console.log(factorial(data));
+    </script>
+  </body>
+</html>
